@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Styling */
+:root {
+  --default: #FBFBFE;
+  --primary: #2434b1;
+  --primary-text: #4365fe;
+  --secondary: #1D1B1D;
+  --accent: #ee3795;
+  --background: #0E0F15;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.hero-button {
+  transform: translate(0, 0);
+}
+
+.hero-button:nth-child(1):hover {
+  box-shadow: 6px 6px 0 0 var(--secondary);
+  transform: translate(-6px, -6px);
+}
+
+.hero-button:nth-child(2):hover {
+  box-shadow: 6px 6px 0 0 var(--primary);
+  transform: translate(-6px, -6px);
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+}
+
+.embla__slide__company {
+  flex: 0 0 40%;
+}
+
+.card-h2-title::before {
+  content: "";
+    height: 80%;
+    width: 100%;
+    display: block;
+    z-index: -5;
+    opacity: 60%;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg,transparent 50%,var(--accent) 50%);
+}
+
+.highlighted-pricing-card {
+  box-shadow: var(--primary-text) 0 0 13px 1px;
+}
+
+.a-no-highlight {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some mobile browsers */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
