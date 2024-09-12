@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Emzthugll/Orion-Landing-Page.git",
+  "homepage": "https://Emzthugll.github.io/Orion-Landing-Page",
   "name": "rocket",
   "version": "0.1.0",
   "private": true,
@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.3.3"
   }
 }
